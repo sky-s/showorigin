@@ -1,0 +1,9 @@
+{"showorigin":
+{
+	"inputs":
+	[
+		{"name":"ax", "kind":"optional", "type":"matlab.graphics.axis.Axes"},
+		{"name":"xyz", "kind":"optional", "type":"choices={'x','y','z','xy','xz','yz','xyz'}"}
+	]
+}
+}
