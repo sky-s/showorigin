@@ -29,7 +29,6 @@ function varargout = showorigin(varargin)
 narginchk(0,2);
 
 % Defaults.
-ax = gca;
 xyz = 'xyz';
 
 if nargin == 1
@@ -37,11 +36,14 @@ if nargin == 1
     if ishandle(arg)
         ax = arg;
     else
+        ax = gca;
         xyz = arg;
     end
 elseif nargin == 2
     ax = varargin{1};
     xyz = varargin{2};
+elseif ~nargin
+    ax = gca;
 end
 
 %% Validate inputs.
